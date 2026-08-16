@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fintech from the Inside</title>
+    <link rel="stylesheet" href="css/shared.css">
+    <link rel="stylesheet" href="css/inside.css">
+</head>
+<body>
+    <!-- Header Bar -->
+    <header class="top-nav">
+        <div class="logo">Fintech from the Inside</div>
+        <div class="header-controls">
+            <div class="mode-toggle">
+                <span id="mode-beginner" class="active">Beginner</span>
+                <span class="toggle-switch" id="btn-toggle-mode"></span>
+                <span id="mode-expert">Expert</span>
+            </div>
+            <button class="btn btn-secondary btn-sm" id="btn-team-map">Team Map</button>
+            <button class="btn btn-secondary btn-sm" id="btn-india-stack">India Stack</button>
+            <button class="btn btn-secondary btn-sm" id="btn-qr">QR Codes</button>
+            <button class="btn btn-primary btn-sm" id="btn-present">Presentation Mode</button>
+        </div>
+    </header>
+
+    <!-- Lifecycle Rail -->
+    <div class="lifecycle-rail" id="lifecycle-rail">
+        <!-- Rendered by JS -->
+    </div>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        <!-- LEFT: Phone Frame -->
+        <section class="phone-section">
+            <div class="phone-frame">
+                <div class="phone-notch"></div>
+                <div class="phone-status-bar">
+                    <span class="time">9:41</span>
+                    <span class="icons">📶 🔋</span>
+                </div>
+                <div class="phone-screen" id="phone-screen">
+                    <!-- Customer Screen Rendered by JS -->
+                </div>
+                <div class="phone-home-indicator"></div>
+            </div>
+        </section>
+
+        <!-- RIGHT: Behind the Screen Panel -->
+        <section class="behind-screen-section">
+            <div class="step-header">
+                <div class="step-badge" id="step-badge">Step 1</div>
+                <h1 id="step-title">Step Title</h1>
+                <h2 id="step-subtitle">Step Subtitle</h2>
+            </div>
+            
+            <div class="layers-container" id="layers-container">
+                <!-- 6 Layers Rendered by JS -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Bottom Controls -->
+    <footer class="bottom-controls">
+        <div class="nav-left">
+            <button class="btn btn-secondary" id="btn-prev">← Previous</button>
+        </div>
+        <div class="nav-center">
+            <span id="step-indicator">Step 1 of 11</span>
+            <select id="step-selector" class="step-selector">
+                <!-- Options rendered by JS -->
+            </select>
+        </div>
+        <div class="nav-right">
+            <button class="btn btn-ghost" id="btn-demo" style="margin-right: 16px;">Open Demo</button>
+            <button class="btn btn-teal" id="btn-next">Next →</button>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div class="modal-overlay hidden" id="modal-team-map">
+        <div class="modal-content modal-lg">
+            <div class="modal-header">
+                <h2>Team Map</h2>
+                <button class="btn-close" id="close-team-map">×</button>
+            </div>
+            <div class="modal-body" id="team-map-body"></div>
+        </div>
+    </div>
+
+    <div class="modal-overlay hidden" id="modal-india-stack">
+        <div class="modal-content modal-lg">
+            <div class="modal-header">
+                <h2>India Stack Infrastructure</h2>
+                <button class="btn-close" id="close-india-stack">×</button>
+            </div>
+            <div class="modal-body" id="india-stack-body"></div>
+        </div>
+    </div>
+
+    <div class="modal-overlay hidden" id="modal-qr">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Student Demo Access</h2>
+                <button class="btn-close" id="close-qr">×</button>
+            </div>
+            <div class="modal-body text-center" id="qr-body">
+                <p>Scan to open the customer demo experience</p>
+                <div id="qr-container" class="qr-container mt-4">
+                    <!-- QR code image -->
+                </div>
+                <div class="qr-profiles mt-4 grid grid-3 gap-2" id="qr-profiles">
+                    <!-- QR profile buttons -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/journey-data.js"></script>
+    <script src="js/profiles.js"></script>
+    <script src="js/state.js"></script>
+    <script src="js/inside-app.js"></script>
+</body>
+</html>
